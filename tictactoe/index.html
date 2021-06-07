@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <div class="game-info">
+        <h3 id="status">Turn: Player X</span></h3>
+        <button id="restart" onclick="resetTable()">RESTART</button>
+    </div>
+    
+    <table id="game-area">
+        <tr>
+            <td onclick="boxClicked(0,0)"></td>
+            <td onclick="boxClicked(0,1)"></td>
+            <td onclick="boxClicked(0,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="boxClicked(1,0)"></td>
+            <td onclick="boxClicked(1,1)"></td>
+            <td onclick="boxClicked(1,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="boxClicked(2,0)"></td>
+            <td onclick="boxClicked(2,1)"></td>
+            <td onclick="boxClicked(2,2)"></td>
+        </tr>
+    </table>
+
+    <!-- <h3 class="result">GAME STARTED</span></h3> -->
+
+</body>
+</html>
