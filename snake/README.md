@@ -10,6 +10,7 @@ Made following changes :
 1. Adding snake face
 2. Added functionality for soft and hard boundary
 3. Score calculation
+4. Improved code modularity by adding all constants together
 
 TODO : 
 1. Adding controls for touch screen.
