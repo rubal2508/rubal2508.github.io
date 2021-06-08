@@ -15,3 +15,5 @@ Made following changes :
 TODO : 
 1. Adding controls for touch screen.
 2. Functionality to change game settings
+
+Watch Demo at [Snake Game](https://rubal2508.github.io/snake/)
