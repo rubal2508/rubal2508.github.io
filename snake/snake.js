@@ -1,10 +1,7 @@
 import { getInputDirection } from "./input.js"
+import {snakeBody, GRID_SIZE, SOFT_BOUNDARY, gameBoard, EXPANSION_RATE} from './constants.js'
 
-export const SNAKE_SPEED = 5
 
-const snakeBody = [
-    {x:10, y:11}
-]
 
 export function update(){
     expandSnake()
@@ -16,14 +13,26 @@ export function update(){
     
     snakeBody[0].x += inputDirection.x
     snakeBody[0].y += inputDirection.y
+
+    if(SOFT_BOUNDARY){
+        gameBoard.style.border = "none"
+        snakeBody.forEach(segment =>{
+            segment.x %= GRID_SIZE
+            segment.y %= GRID_SIZE
+    
+            if(segment.x === 0) segment.x = GRID_SIZE
+            if(segment.y === 0) segment.y = GRID_SIZE
+        })
+    }
 }
 
 export function draw(gameBoard){
-    snakeBody.forEach(segment => {
+    snakeBody.forEach((segment,index) => {
         const snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
         snakeElement.classList.add('snake')
+        if(index===0) snakeElement.classList.add('first')
         gameBoard.appendChild(snakeElement)
     })
 }
@@ -49,4 +58,8 @@ export function snakeIntersection(position){
         if(index===0) return false
         return segment.x === position.x && segment.y === position.y
     })
+}
+
+export function getScore(){
+    return Math.floor(snakeBody.length / EXPANSION_RATE)
 }

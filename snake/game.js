@@ -1,9 +1,9 @@
 import {
-    SNAKE_SPEED, 
     update as updateSnake,
     draw as drawSnake,
     getSnakeHead,
-    snakeIntersection
+    snakeIntersection,
+    getScore
 } from './snake.js'
 
 import {
@@ -13,13 +13,15 @@ import {
 
 import {outsideGrid} from './grid.js'
 
+import {gameBoard, SNAKE_SPEED} from './constants.js'
+
+
 let lastRenderTime = 0
 let gameOver = false
-const gameBoard = document.getElementById(`game-board`)
 
 function main(currentTime){
     if(gameOver){
-        if(confirm('You lose! Press OK to restart')){
+        if(confirm(`Game Over! Your score is ${getScore()}\nPress OK to restart`)){
             location.reload()
         }
         return
@@ -53,10 +55,12 @@ function checkDeath(){
 }
 
 
-
-
-// refresh redirect to snake
-// change snake color
-// add score
-// boundary teleport
-// mobile play
+/*
+TODO:
+refresh redirect to snake
+change snake color and add face
+add score
+boundary teleport
+mobile play
+add functionality to change constants
+*/

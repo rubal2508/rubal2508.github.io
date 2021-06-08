@@ -1,4 +1,4 @@
-export const GRID_SIZE = 21
+import {GRID_SIZE} from './constants.js'
 
 export function getRandomGridPosition(){
     return {
