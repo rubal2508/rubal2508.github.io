@@ -51,3 +51,13 @@ function draw(){
 function checkDeath(){
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection(getSnakeHead())
 }
+
+
+
+
+// refresh redirect to snake
+// change snake color
+// add score
+// boundary teleport
+// mobile play
+// add readme
