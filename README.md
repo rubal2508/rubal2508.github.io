@@ -1,0 +1,1 @@
+## Contains all my static projects which I made while learning web development
