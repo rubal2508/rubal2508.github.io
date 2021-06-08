@@ -53,14 +53,3 @@ function draw(){
 function checkDeath(){
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection(getSnakeHead())
 }
-
-
-/*
-TODO:
-refresh redirect to snake
-change snake color and add face
-add score
-boundary teleport
-mobile play
-add functionality to change constants
-*/
