@@ -20,7 +20,7 @@ const gameBoard = document.getElementById(`game-board`)
 function main(currentTime){
     if(gameOver){
         if(confirm('You lose! Press OK to restart')){
-            window.location = '/'
+            location.reload()
         }
         return
     }
@@ -60,4 +60,3 @@ function checkDeath(){
 // add score
 // boundary teleport
 // mobile play
-// add readme
