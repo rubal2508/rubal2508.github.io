@@ -3,7 +3,6 @@ import {
     draw as drawSnake,
     getSnakeHead,
     snakeIntersection,
-    getScore
 } from './snake.js'
 
 import {
@@ -21,7 +20,7 @@ let gameOver = false
 
 function main(currentTime){
     if(gameOver){
-        if(confirm(`Game Over! Your score is ${getScore()}\nPress OK to restart`)){
+        if(confirm(`Game Over! Press OK to restart`)){
             location.reload()
         }
         return

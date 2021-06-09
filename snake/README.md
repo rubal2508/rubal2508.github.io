@@ -15,5 +15,8 @@ Made following changes :
 TODO : 
 1. Adding controls for touch screen.
 2. Functionality to change game settings
+3. multiple power foods, food animation
+4. Live score
+5. Instructions
 
 Watch Demo at [Snake Game](https://rubal2508.github.io/snake/)

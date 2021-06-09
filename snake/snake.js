@@ -1,7 +1,5 @@
 import { getInputDirection } from "./input.js"
-import {snakeBody, GRID_SIZE, SOFT_BOUNDARY, gameBoard, EXPANSION_RATE} from './constants.js'
-
-
+import {snakeBody, GRID_SIZE, SOFT_BOUNDARY, gameBoard} from './constants.js'
 
 export function update(){
     expandSnake()
@@ -58,8 +56,4 @@ export function snakeIntersection(position){
         if(index===0) return false
         return segment.x === position.x && segment.y === position.y
     })
-}
-
-export function getScore(){
-    return Math.floor(snakeBody.length / EXPANSION_RATE)
 }
