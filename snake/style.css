@@ -7,12 +7,28 @@ body{
     margin: 0;
     /* background-color: #000; */
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    text-align: center;
+    border-bottom: 1px solid #222;
+    padding: 2vmin;
+}
+
+.instruction{
+    text-align: left;
+    width: 70vmin;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #game-status{
-    margin: 2vmin;
+    margin-bottom: 2vmin;
+    margin-top: 2vmin;
     display: flex;
     justify-content: space-between;
+    width: 70vmin;
 }
 
 #game-status span{
@@ -24,8 +40,8 @@ body{
 
 #game-board{
     background-color: #222;
-    width: 90vmin;
-    height: 90vmin;
+    width: 70vmin;
+    height: 70vmin;
     display: grid;
     grid-template-rows: repeat(21,1fr);
     grid-template-columns: repeat(21,1fr);
@@ -46,20 +62,20 @@ body{
 
 .food{
     background-color: crimson;
-    border: 0.5vmin dotted #222;
+    border: 0.4vmin dotted #aaa;
     border-radius: 2vmin;
     /* animation: myfirst 0.5s linear infinite; */
 }
 
 .food-special{
     background-color: blue;
-    border: 0.5vmin dotted yellow;
+    border: 0.4vmin dotted yellow;
     border-radius: 2vmin;
     animation: myfirst 0.5s linear infinite;
 }
   
 @keyframes myfirst {
     50%  {
-        border: 0.5vmin dashed yellow;
+        border: 0.4vmin dashed yellow;
     }  
 }

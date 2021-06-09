@@ -11,12 +11,12 @@ Made following changes :
 2. Added functionality for soft and hard boundary
 3. Score calculation
 4. Improved code modularity by adding all constants together
+5. Added multiple power foods and animation
+6. Added live scoring
 
 TODO : 
 1. Adding controls for touch screen.
 2. Functionality to change game settings
-3. multiple power foods, food animation
-4. Live score
 5. Instructions
 
 Watch Demo at [Snake Game](https://rubal2508.github.io/snake/)
